@@ -7,3 +7,20 @@
 .scroll {
   height: 100%;
 }
+
+.thumbnail-list-item {
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom:5px;
+}
+
+.mainContainer {
+	flex: 1;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.container {
+	height: 100%;
+}
