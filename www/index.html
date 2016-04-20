@@ -4,93 +4,89 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>My karate List</title>
+    <title>Videolist</title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 
+	
     <!-- homescreen image -->
-    <!-- <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/> -->
-
-    <!-- <link rel="shortcut icon" type="image/png" href="img/_fav.png"/> -->
-
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/_fav.png"/>
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
 
-    
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
 	<script src="https://www.youtube.com/iframe_api"></script>
-	<script src="js/angular-youtube-embed.js"></script>
-	<script src="js/app.js"></script>
-
-	<script src="js/video-controller.js"></script>
-
-	<!-- ionic/angularjs js -->
-	<script src="lib/ionic/js/ionic.bundle.js"></script>
-
-	<!-- cordova script (this will be a 404 during development) -->
 	<script src="cordova.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-
+	<script src="lib/ionic/js/ionic.bundle.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/angular-youtube-embed.js"></script>
+	<script src="js/video-controller.js"></script>
 </head>
-  <body ng-app="myApp" ng-controller="youtubeCtrl">
+
+<body ng-app="myApp" ng-controller="youtubeCtrl">
     <ion-pane>
-      
-      <!-- header -->
-      <ion-header-bar class="bar-royal" >
-        <h1 class="title">My karate List</h1>
-      </ion-header-bar> 
-
-      <ion-content ng-controller="youtubeCtrl" class="padding-horizontal">
-<!-- 
+	<ion-header-bar class="bar-royal" >
+		<h1 class="title">My Videolist</h1>
+	</ion-header-bar> 
+	<ion-content ng-controller="youtubeCtrl" class="padding-horizontal">
+	
+	<!-- INPUT URL BAR -->
 		<form ng-submit="karateAdd()">
-			<input type="text" ng-model="karateInput" size="50" placeholder="Add New video">
-			<input type="submit" value="Add New">
-		</form>
-		 -->
-		 <form ng-submit="karateAdd()">
-		 <div class="list">
-            <div class="item item-input">
-                <label class="item-input-wrapper" id="search-input">
-                    <input type="text" placeholder="Add URL" ng-model="karateInput">
-                </label>
-				<button class="button button-small">
-				  Submit
-				</button>
+			<div class="list">
+				<div class="item item-input">
+					<label class="item-input-wrapper" id="search-input">
+						<input type="text" placeholder="Add URL" ng-model="karateInput">
+					</label>
+					<button class="button button-small">Submit</button>
+				</div>
 			</div>
-		</div>
         </form>
-		</br>
+		<br/>
+		
+	<!-- INPUT END -->
 		
 		
-		<div class="container">
-			<ul id="og-grid" class="og-grid mainContainer">
-				<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-					<img src="images/thumbs/1.jpg" alt="img01"/>
-				</a>
-				<li ng-repeat="x in karateList" class="thumbnail-list-item">
-					<!-- <input type="checkbox" ng-model="x.done" /> <span ng-bind="x.videoURL"></span> -->
-					<!-- <li ng-model="x.done" ng-bind="x.videoURL"></li> -->
-					<img ng-model="x.done" ng-src="http://img.youtube.com/vi/{{x.videoURL}}/2.jpg" width="240px"/>
-				</li>
-			</ul>
-		</div>
-		<!-- <p><button ng-click="remove()">Remove marked video</button></p> -->
+	<!-- GRID VIDEOS -->
+		<div class="container">	
+			<div class="main">
+				<ul class="mainContainer">
+					<li  ng-repeat="x in karateList" class="thumbnail-list-item" id="{{x.videoURL}}">
+						<img src="http://img.youtube.com/vi/{{x.videoURL}}/2.jpg" ng-click="openModal(x.videoURL)" width="240px"/>
+					</li>
+				</ul>
+			</div>
+		</div>		
+	<!-- GRID END -->
+	
+	<!-- POPUP ON CLICK -->
+		<script id="modal.html" type="text/ng-template">
+			<div class="modal">
+				<header class="bar bar-header bar-positive">
+				<h1 class="title">https://www.youtube.com/watch?v={{selectedId}}</h1>
+					<div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div>
+				</header>
+				<!-- <content has-header="true" padding="true"> -->
+				<body ng-app="myApp" ng-controller="youtubeCtrl">
+				<div class="content">
+					<!-- <img src="https://docs.angularjs.org/img/tutorial/tutorial_00.png"/> -->
+					<!-- <h1>{{selectedId}}</h1> -->
+					<youtube-video video-id="selectedId"></youtube-video>
+				</div>
+				</body>
+			</div>
+		</script>
+		
+	<!-- POPUP END -->
+	
 
-		<!-- You can use 'youtube-video' as an element or attribute. -->
-		<!-- <img src="http://img.youtube.com/vi/{{theBestVideo}}/2.jpg"> -->
-		<!-- <youtube-video video-id="theBestVideo"></youtube-video> -->
       </ion-content>
     </ion-pane>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/grid.js"></script>
-	<script>
-		$(function() {
-			Grid.init();
-		});
-	</script> 
-  </body>
+ </body>
 </html>
