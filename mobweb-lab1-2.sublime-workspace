@@ -1,0 +1,1195 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"add",
+				"addToHomeScreen_POPUP"
+			],
+			[
+				"set",
+				"setTimeout〔function〕"
+			],
+			[
+				"re",
+				"respone"
+			],
+			[
+				"ingre",
+				"ingredientlist"
+			],
+			[
+				"Dish",
+				"DishSearch"
+			],
+			[
+				"marker",
+				"marker2"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"position",
+				"position: 〔property〕"
+			],
+			[
+				"left",
+				"left: 〔property〕"
+			],
+			[
+				"di",
+				"display: 〔property〕"
+			],
+			[
+				"flo",
+				"float: 〔property〕"
+			],
+			[
+				"he",
+				"height: 〔property〕"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"log",
+				"login"
+			],
+			[
+				"mya",
+				"myAuthObject"
+			],
+			[
+				"ro",
+				"rootScope"
+			],
+			[
+				"firebase",
+				"firebaseObject"
+			],
+			[
+				"auth",
+				"authUser"
+			],
+			[
+				"reg",
+				"regUser"
+			],
+			[
+				"fireb",
+				"FIREBASE_URL"
+			],
+			[
+				"f",
+				"firebaseAuth"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"vale",
+				"value2"
+			],
+			[
+				"value",
+				"value1"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"a",
+				"applet	Tag"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"red",
+				"redirect_to"
+			],
+			[
+				"n",
+				"new_location"
+			],
+			[
+				"hea",
+				"headers_list"
+			],
+			[
+				"inc",
+				"included_header"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"co",
+				"company"
+			],
+			[
+				"un",
+				"undefined"
+			],
+			[
+				"tim",
+				"timeStampB"
+			],
+			[
+				"time",
+				"timeStampB"
+			],
+			[
+				"ch",
+				"checkers"
+			],
+			[
+				"ON",
+				"onkeydownFromUser"
+			],
+			[
+				"s",
+				"start"
+			],
+			[
+				"che",
+				"checkers"
+			],
+			[
+				"cha",
+				"changeTone"
+			],
+			[
+				"c",
+				"c2"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"mu",
+				"muteUnmute"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"CH",
+				"ChangeAndWrite"
+			],
+			[
+				"Ne",
+				"nextNoteIndex"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"sta",
+				"startCounter"
+			],
+			[
+				"num",
+				"numberOfVoices"
+			],
+			[
+				"nu",
+				"numberOfVoices"
+			],
+			[
+				"change",
+				"changePitchToNext"
+			],
+			[
+				"se",
+				"setNextNoteIndex"
+			],
+			[
+				"chan",
+				"changeFreq"
+			],
+			[
+				"cu",
+				"currentIndex"
+			],
+			[
+				"activ",
+				"activeVoices"
+			],
+			[
+				"nex",
+				"nextNoteIndex"
+			],
+			[
+				"cur",
+				"currentNoteIndex"
+			],
+			[
+				"freq",
+				"frequency"
+			],
+			[
+				"CU",
+				"currentNoteIndex"
+			],
+			[
+				"o",
+				"oscillator"
+			],
+			[
+				"acti",
+				"activeVoices"
+			],
+			[
+				"act",
+				"activeVoices"
+			],
+			[
+				"curr",
+				"currentKeycode"
+			],
+			[
+				"current",
+				"currentNoteIndex"
+			],
+			[
+				"mute",
+				"muteButton"
+			],
+			[
+				"sess",
+				"sessionAverage"
+			],
+			[
+				"av",
+				"averageBMP"
+			],
+			[
+				"tot",
+				"totAverBPM"
+			],
+			[
+				"to",
+				"totAverBPM"
+			],
+			[
+				"m",
+				"menu"
+			],
+			[
+				"on",
+				"oneDish"
+			],
+			[
+				"up",
+				"updateDisplay"
+			],
+			[
+				"dish",
+				"dishID"
+			],
+			[
+				"all",
+				"allRecipes"
+			],
+			[
+				"Prep",
+				"PrepView"
+			],
+			[
+				"get",
+				"getDish"
+			],
+			[
+				"getd",
+				"getDish"
+			],
+			[
+				"in",
+				"ingredients"
+			],
+			[
+				"Tet",
+				"TestModel"
+			],
+			[
+				"al",
+				"allDishes"
+			],
+			[
+				"de",
+				"dessert"
+			],
+			[
+				"pu",
+				"publisher"
+			],
+			[
+				"cre",
+				"create-dinner"
+			],
+			[
+				"sear",
+				"searchField"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"out",
+				"outputDish"
+			],
+			[
+				"ou",
+				"outputDish"
+			],
+			[
+				"ma",
+				"main1view1dishes"
+			],
+			[
+				"main1",
+				"main1view1"
+			],
+			[
+				"le",
+				"len"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"main",
+				"main1view1"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"BE",
+				"BestBPM"
+			],
+			[
+				"ab",
+				"ABPM"
+			],
+			[
+				"A",
+				"ABPM"
+			],
+			[
+				"hi",
+				"HighestReachedBPM"
+			],
+			[
+				"ave",
+				"averageInBPM"
+			],
+			[
+				"ts",
+				"tsB"
+			],
+			[
+				"timeStam",
+				"timeStampB"
+			],
+			[
+				"mut",
+				"muteId"
+			],
+			[
+				"mys",
+				"mysql_close"
+			],
+			[
+				"my",
+				"mypassword"
+			],
+			[
+				"date_de",
+				"date_default_timezone_set"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"i",
+				"items"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"site",
+				"site-icon"
+			],
+			[
+				"home",
+				"home_url"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "www/js/map-controller.js",
+			"settings":
+			{
+				"buffer_size": 6002,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"read",
+				"ReadmePlease"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: FUN",
+				"Snippet: Function"
+			],
+			[
+				"Snippet: fun",
+				"Snippet: Function"
+			],
+			[
+				"Snippet: fo",
+				"Snippet: for (…) {…}"
+			],
+			[
+				"Snippet: o",
+				"Snippet: Object Value JS"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Object Value JS"
+			],
+			[
+				"snip",
+				"Snippet: Object Method"
+			],
+			[
+				"emmet",
+				"Emmet: Toggle Comment"
+			],
+			[
+				"rea",
+				"ReadmePlease"
+			],
+			[
+				"hyper",
+				"Hyperlink Helper: Wrap Word / Selection as Link"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"line",
+				"Line Ending: Unix"
+			],
+			[
+				"book",
+				"Bookmarks: Toggle"
+			],
+			[
+				"HTML",
+				"HTML: Wrap Selection With Tag"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 366.0,
+		"history":
+		[
+			"import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1-2",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1-2/www",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1-2/www/css",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1-2/www/js"
+	],
+	"file_history":
+	[
+		"/Users/hjalmarjakobsson/Sites/ng2048-master/package.json",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1-2/www/index.html",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1-2/www/js/home-screen-pop-controller.js",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1-2/www/js/map-controller.js",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1-2/www/css/style.css",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1-2/www/js/MapController.js",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1-2/www/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1ex2/www/templates/map.html",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1ex2/www/css/style.css",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1ex2/www/index.html",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1ex2/www/js/app.js",
+		"/Users/hjalmarjakobsson/Desktop/node postgres2/app.js",
+		"/Users/hjalmarjakobsson/Desktop/node postgres1/package.json",
+		"/Users/hjalmarjakobsson/Desktop/node postgres1/app.js",
+		"/Users/hjalmarjakobsson/Desktop/heroku_testing/h_psql_1/pass",
+		"/Users/hjalmarjakobsson/Desktop/heroku_testing/h_psql_1/app.js",
+		"/Users/hjalmarjakobsson/Desktop/heroku_testing/h_psql_1/.gitignore",
+		"/Users/hjalmarjakobsson/Desktop/heroku_testing/h_psql_1/server.js",
+		"/Users/hjalmarjakobsson/Desktop/heroku_testing/h_psql_1/test/app.test.js",
+		"/Users/hjalmarjakobsson/Desktop/heroku_testing/h_psql_1/test/db.test.js",
+		"/Users/hjalmarjakobsson/Desktop/heroku_testing/h_psql_1/package.json",
+		"/Users/hjalmarjakobsson/Desktop/heroku_testing/h_psql_1/config/production.json",
+		"/Users/hjalmarjakobsson/Desktop/heroku_testing/h_psql_1/config/default.json",
+		"/Users/hjalmarjakobsson/Desktop/heroku_testing/h_psql_1/script.sql",
+		"/Users/hjalmarjakobsson/Sites/node-and-express/hello.js",
+		"/Users/hjalmarjakobsson/Sites/node-and-express/package.json",
+		"/Users/hjalmarjakobsson/Desktop/node-js-getting-started/index.js",
+		"/Users/hjalmarjakobsson/Desktop/node-js-getting-started/package.json",
+		"/Users/hjalmarjakobsson/Desktop/node-js-getting-started/.env",
+		"/Users/hjalmarjakobsson/Desktop/untitled folder/node-js-getting-started/index.js",
+		"/Users/hjalmarjakobsson/Desktop/heroku-postgres-node/node-postgres-todo/models/database.js",
+		"/Users/hjalmarjakobsson/Desktop/node-js-getting-started/Procfile",
+		"/Users/hjalmarjakobsson/Desktop/heroku-postgres-node/node-postgres-todo/package.json",
+		"/Users/hjalmarjakobsson/Desktop/heroku node/Procfile",
+		"/Users/hjalmarjakobsson/Desktop/heroku node/.git/MERGE_MSG",
+		"/Users/hjalmarjakobsson/Desktop/heroku node/.gitignore",
+		"/Users/hjalmarjakobsson/Desktop/heroku node/views/index.ejs",
+		"/Users/hjalmarjakobsson/Desktop/heroku node/package.json",
+		"/Users/hjalmarjakobsson/Desktop/heroku node/public/css/style.css",
+		"/Users/hjalmarjakobsson/Desktop/heroku node/views/index.js",
+		"/Users/hjalmarjakobsson/Desktop/heroku node/views/index.html",
+		"/Users/hjalmarjakobsson/Desktop/heroku node/README.md",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/index.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/search.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/nav.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/preparation.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/overview.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/searchCtrl.js",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/dinnerCtrl.js",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1/simple-map.html",
+		"/Users/hjalmarjakobsson/Sites/_frontend design/basic-websites/css-gooey-menu-version-1/index.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/dinnerService.js",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/test_navCtrl.js",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/dinner-sidebar.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/dish.html",
+		"/Users/hjalmarjakobsson/Sites/dinna/app/index.html",
+		"/Users/hjalmarjakobsson/Sites/angular-basic-reg-form/js/services/authentication.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch02/02_09/angularregistration/js/services/authentication.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch02/02_09/angularregistration/index.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/controllers/success.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/views/register.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/views/login.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/services/authentication.js",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/SublimeLinter-jshint/README.md",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/BracketHighlighter/readme.md",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/css/style.css",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch02/02_04/angularregistration/js/controllers/registration.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch02/02_05/angularregistration/js/controllers/registration.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/views/nav.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/views/success.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch01/01_05/angularregistration/js/controllers/success.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/gulpfile.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/package.json",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch01/01_05/angularregistration/views/login.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/controllers/registration.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch01/01_07/angularregistration/views/login.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch01/01_02/angularregistration/index.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch01/01_03/angularregistration/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/lib/angular/angular.min.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/lib/angular/angular-animate.min.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/lib/angular/angular-route.min.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/index.html",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/validation.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/false_pos.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/included_functions.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/form_single.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/form.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/form_processing.php",
+		"/Users/hjalmarjakobsson/Sites/Pitch Maschine/omni/018-pm-fixed-new-interval-range.html",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/javasc.js",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/encodingforhtml.php",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Emmet/README.md",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/HyperlinkHelper/README.md",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/readme.md",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/ReadmePlease/README.md",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/htmlencode.php",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/LineEndings/readme.md",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/basic.html",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/C#/README.markdown",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Package Control/readme.md",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/form_processing.html",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/my_phpinfo.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/redirect.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/phpheaders.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/included_header.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/include.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/second_page.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/first_page.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/Exercise Files/Chapter 10/10_02/sandbox/first_page.php",
+		"/Users/hjalmarjakobsson/Sites/Pitch Maschine/_/bootstrap/css/bootstrap-theme.css",
+		"/Users/hjalmarjakobsson/Sites/Pitch Maschine/_/bootstrap/css/bootstrap.css",
+		"/Users/hjalmarjakobsson/Desktop/TBN-jupiter_v502_2/Themes/jupiter/assets/stylesheet/styles.css",
+		"/Users/hjalmarjakobsson/Sites/PM - [3 stable]/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/PM - [1 stable]/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/PM - [stable]/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/Pitch Maschine/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/Pitch Maschine/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/hjalmarjakobsson/Sites/Bootstrap Training/Images"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"button",
+			"Subtitle",
+			"\" ",
+			"clickTest",
+			"initialize",
+			"respone",
+			"});\n",
+			"href",
+			"/:1",
+			"class",
+			"/:1",
+			"/1",
+			"query",
+			"marker",
+			"myLatLng",
+			"397",
+			"myObj",
+			"currentUser.firstname",
+			"ng",
+			"nav",
+			"regRef",
+			"btn",
+			"nav",
+			"cf",
+			"btn",
+			"cf",
+			"email",
+			"message",
+			"section",
+			"is_equal",
+			"password",
+			"username",
+			"int",
+			"append",
+			"snipp",
+			"shift-ctrl-s",
+			"ctrl-shift-s",
+			"comment",
+			"a",
+			"f12",
+			"username",
+			"company",
+			"id",
+			"iList",
+			"/*",
+			";\n",
+			"vertical",
+			"getNextNoteIndex",
+			"noteList",
+			"amp",
+			"a_v",
+			"check",
+			"start",
+			"each",
+			"checkers",
+			"activeVoices",
+			"checker",
+			"voice5",
+			"voice",
+			"checker",
+			"gain",
+			"changePitchToNext",
+			"vobj",
+			"getNextNoteIndex",
+			"vObj",
+			"getNextNoteIndex",
+			"calculateKeycode",
+			"getNextNoteIndex",
+			"changetone",
+			"chagne",
+			"changeton",
+			"getnextnote",
+			"FF4C5A",
+			"variableObject",
+			"muteButton",
+			"		    $('.",
+			"mute",
+			"totAve",
+			"totave",
+			"totAve",
+			"totave",
+			"totAve",
+			"totalAverageBMP",
+			"totalAverageBPM",
+			"TotalAverageBPM",
+			"totalAverageBPM",
+			"com",
+			"totave",
+			"totAve",
+			"totave",
+			"totAve",
+			"HighestReachedBPM",
+			"AverageBMP",
+			"header",
+			"review",
+			"scope",
+			"img",
+			"href",
+			"About",
+			"about",
+			"convolver",
+			"convolv",
+			"reverb",
+			"xmlhttp",
+			"analyt",
+			"envelope",
+			"buffer",
+			"demosource",
+			"demoSourceBuffers",
+			"loadDemoSource",
+			"demoSourceName",
+			"demoSource",
+			"'demoSource'",
+			"demoSource",
+			"demoSourceBuffers",
+			"name",
+			"demoSourceName",
+			"demoSourceBuffers",
+			"loadDemoSource",
+			"demoSourceSelector",
+			"css",
+			"saw",
+			"keydown",
+			"id",
+			"dish-name",
+			"consol",
+			"cons",
+			"consol"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "www/js/map-controller.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 6002,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 320.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "mobweb-lab1-2.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"multi-",
+				"pseudo-code/multi-pseudo.js"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"app",
+				"js/app.js"
+			],
+			[
+				"css",
+				"_css/main.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "ipro",
+		"selected_items":
+		[
+			[
+				"ipro",
+				"~/Sites/dinnerplanner-html/iprog-lab-5.sublime-project"
+			],
+			[
+				"ip",
+				"~/Sites/angular-basic-reg-form/iprog-LAB5.sublime-workspace"
+			],
+			[
+				"pitc",
+				"~/Desktop/pitch-maschine.sublime-workspace"
+			],
+			[
+				"dinn",
+				"~/Sites/dinnerplanner-lab5/dinner-planner-lab5.sublime-workspace"
+			],
+			[
+				"",
+				"~/Sites/angular-basic-reg-form/js/services/ionic-first.sublime-workspace"
+			],
+			[
+				"ipr",
+				"~/Sites/angular-basic-reg-form/iprog-LAB5.sublime-workspace"
+			],
+			[
+				"php",
+				"~/Sites/MAMPsites/lynda-php-w-mysql/php-w-mysql.sublime-project"
+			],
+			[
+				"in",
+				"~/Sites/Interaktiva-Lab-2/dinnerplanner.sublime-project"
+			],
+			[
+				"din",
+				"~/Sites/Interaktiva-Lab-2/dinnerplanner.sublime-project"
+			],
+			[
+				"pi",
+				"~/Desktop/pitch-maschine.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
