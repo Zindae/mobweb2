@@ -1,3 +1,14 @@
+.selectable{
+    -webkit-user-select: auto;
+}
+
+.body, .ionic-body {
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+
 .thumbnail-list-item {
 	float: left;
 	margin-left: 20px;
@@ -18,9 +29,9 @@
 	width: 90%;
 }
 
-.content {
+.video-content {
 	position: absolute;
-	/* float: left; */
+	float: left;
 	margin:2%;
 	margin-top:5%;
 	width: 640px;
@@ -30,4 +41,26 @@
 	margin:2%;
 	margin-top:5%;
 	float: right;
+	background-color: #D6FDD6;
+}
+
+.star-rating {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.star-rating .star {
+  padding: 1px;
+  color: #ddd;
+  font-size: 20px;
+  text-shadow: .05em .05em #aaa;
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.star-rating .star.filled {
+  color: #fd0;
+}
+.star-rating.readonly .star.filled {
+  color: #666;
 }

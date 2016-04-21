@@ -10,7 +10,7 @@
     <link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/default.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
-
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
 	
     <!-- homescreen image -->
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
@@ -25,17 +25,25 @@
 	<script src="https://www.youtube.com/iframe_api"></script>
 	<script src="cordova.js"></script>
 	<script src="lib/ionic/js/ionic.bundle.js"></script>
+	<script src="lib/angular-resource/angular-resource.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/angular-youtube-embed.js"></script>
 	<script src="js/video-controller.js"></script>
+	<script src="js/videoService.js"></script>
+	<script src="js/star-controller.js"></script>
+
 </head>
 
-<body ng-app="myApp" ng-controller="youtubeCtrl">
-    <ion-pane>
+<body ng-app="myApp">
+<ion-pane>
 	<ion-header-bar class="bar-royal" >
 		<h1 class="title">My Videolist</h1>
 	</ion-header-bar> 
 	<ion-content ng-controller="youtubeCtrl" class="padding-horizontal">
+	
+	<div>
+		{{youtubeVideo.items[0].snippet.title}}
+	</div>
 	
 	<!-- INPUT URL BAR -->
 		<form ng-submit="karateAdd()">
@@ -57,8 +65,8 @@
 		<div class="container">	
 			<div class="main">
 				<ul class="mainContainer">
-					<li  ng-repeat="x in karateList" class="thumbnail-list-item" id="{{x.videoURL}}">
-						<img src="http://img.youtube.com/vi/{{x.videoURL}}/2.jpg" ng-click="openModal(x.videoURL)" width="240px"/>
+					<li ng-repeat="x in videoList()" class="thumbnail-list-item" id="{{x.videoURL}}">
+						<img src="http://img.youtube.com/vi/{{x.videoURL}}/2.jpg" ng-click="openModal(x.videoURL) && setCurrentRate(x.rating)" width="240px"/>
 					</li>
 				</ul>
 			</div>
@@ -66,27 +74,38 @@
 	<!-- GRID END -->
 	
 	<!-- POPUP ON CLICK -->
+	<!-- <ion-modal-view ng-app="myApp" ng-controller="youtubeCtrl"> -->
 		<script id="modal.html" type="text/ng-template">
 			<div class="modal">
 				<header class="bar bar-header bar-positive">
-				<h1 class="title">https://www.youtube.com/watch?v={{selectedId}}</h1>
+				<h1 class="title"><a href="https://www.youtube.com/watch?v={{selectedId}}">{{youtubeVideo.items[0].snippet.title}}</a></h1>
 					<div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div>
 				</header>
-				<!-- <content has-header="true" padding="true"> -->
+				<content has-header="true" padding="true">
 				<body ng-app="myApp" ng-controller="youtubeCtrl">
-				<div class="content">
+				<div class="video-content">
 					<!-- <img src="https://docs.angularjs.org/img/tutorial/tutorial_00.png"/> -->
 					<!-- <h1>{{selectedId}}</h1> -->
 					<youtube-video video-id="selectedId"></youtube-video>
 				</div>
+				<div class="rating">
+					<div ng-controller="RatingController as rating" class="containerRating">
+					  <h1>Rate this video!</h1>
+					  <star-rating ng-model="rating.rating1" max="5" on-rating-select="rating.rateFunction(rating)"></star-rating>
+					  <div><strong>Rating 1:</strong> {{rating.rating1}}</div>
+					</div>
+				</div>
 				</body>
+				</content>
 			</div>
 		</script>
+	<!-- </ion-modal-view> -->
 		
 	<!-- POPUP END -->
-	
+	<!-- https://www.youtube.com/watch?v=Bk7RVw3I8eg -->
+	<!-- <youtube-video video-id="selectedId"></youtube-video> -->
 
-      </ion-content>
-    </ion-pane>
- </body>
+  </ion-content>
+</ion-pane>
+</body>
 </html>
