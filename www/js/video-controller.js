@@ -1,7 +1,5 @@
 myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup, $ionicModal, videoApi) {
 	
-	// Add, remove and list management for videos
-
     $scope.karateAdd = function() {
 		videoApi.karateList[youtubeEmbedUtils.getIdFromURL($scope.karateInput)] = {videoURL:youtubeEmbedUtils.getIdFromURL($scope.karateInput), rating:1};
         $scope.karateInput = "";
@@ -19,13 +17,23 @@ myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup,
 	$scope.videoList = function() {
 		return videoApi.getList();
 	}
-	
-	
-	//     $scope.karateList = [{videoURL:'PWLv6UOr9TQ', done:false}, {videoURL:'1TIwCP87PCA', done:false}, {videoURL:'wYBL5aAFgJQ', done:false}, {videoURL:'7oHObnP1sGE', done:false}, {videoURL:'IQ2ofp7bjxw', done:false}, {videoURL:'ow7uAvCU1TI', done:false}, {videoURL:'Bk7RVw3I8eg', done:false}, {videoURL:'_wKVv0WMnj8', done:false}, {videoURL:'aMimeO279YE', done:false}, {videoURL:'5m3Pc77egSg', done:false}];
-	
 
-	// console.log(videoApi.yt.get('Bk7RVw3I8eg'));
-	
+	$scope.setRating = function(x,y){
+		$scope.selectedRating = x.path[0].value;
+		$scope.id = y;
+		videoApi.setRating($scope.selectedRating, $scope.id);
+		if (videoApi.karateList[y].done === true){
+			console.log('true');
+			$scope.checked = true;
+		}
+		else {
+			console.log('false');
+			$scope.checked = false;
+		};
+		$scope.videoRating = videoApi.karateList[$scope.id].rating;
+		
+	}
+
 	// HTML template for the modal
 	$ionicModal.fromTemplateUrl('modal.html', function($ionicModal) {
         $scope.modal = $ionicModal;
@@ -43,9 +51,18 @@ myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup,
 	// Scope for inside the modal
 	$scope.openModal = function(id) {
 		$scope.selectedId = id;
+		$scope.videoRating = videoApi.karateList[$scope.selectedId].rating;
 		videoApi.setVideo($scope.selectedId);
-
 		$scope.modal.show();
+		if (videoApi.karateList[id].done === true){
+			console.log('ratat');
+			$scope.checked = true;
+		}
+		else {
+			console.log('ej ratat');
+			$scope.checked = false;
+		};
+		// $scope.videoRating = lol;
 		$scope.youtubeVideo = videoApi.yt.get({id:id});
 		// $scope.theBestVideo = 'TyX2nGbAWgs'
 }
