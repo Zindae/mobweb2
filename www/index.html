@@ -43,13 +43,13 @@
 <body ng-app="myApp">
 <ion-pane>
 	<ion-header-bar class="bar-royal" >
-		<h1 class="title">My Videolist</h1>
+		<h1 class="title">My Amazing Videolist</h1>
 	</ion-header-bar> 
 	<ion-content ng-controller="youtubeCtrl" class="padding-horizontal">
-	
+<!-- 	
 	<div>
 		{{youtubeVideo.items[0].snippet.title}}
-	</div>
+	</div> -->
 	
 	<!-- INPUT URL BAR -->
 		<form ng-submit="karateAdd()">
@@ -85,7 +85,9 @@
 			<div class="modal">
 				<header class="bar bar-header bar-positive">
 				<h1 class="title"><a href="https://www.youtube.com/watch?v={{selectedId}}">{{youtubeVideo.items[0].snippet.title}}</a></h1>
+					<div class="button button-assertive" ng-click="removeVideo(selectedId)"><span class="icon ion-close"></span></div>
 					<div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div>
+					
 				</header>
 				<content has-header="true" padding="true">
 				<body ng-app="myApp" ng-controller="youtubeCtrl">
@@ -96,30 +98,31 @@
 				</div>
 				
 				<!-- RATING ELEMENTS -->
-				<div class="ratingbox">
+				<div class="ratingbox" ng-hide="checked">
 					<h1>Rate this video!</h1>
 					<div class="star-rating" ng-click="setRating($event, selectedId)" ng-hide="checked">
+					<!-- <h1>Rate this video!</h1> -->
 							<input type="radio" name="rating" value="1"><i></i>
 							<input type="radio" name="rating" value="2"><i></i>
 							<input type="radio" name="rating" value="3"><i></i>
 							<input type="radio" name="rating" value="4"><i></i>
 							<input type="radio" name="rating" value="5"><i></i>
 					</div>
-					<div ng-show="checked">
-					<h2>You rated {{videoRating}}</h2>
-					</div>
+				</div>
+				<div class="ratingbox" ng-show="checked">
+					<h3>You rated this video {{videoRating}}! Well done!</h3>
 				</div>
 				
 		<!-- COMMENT FORM http://devzone.co.in/angularjs-example-simple-user-comment-box/ -->
 		
 				<div id='dv1'>
 					Post your Comment
-					<input type="text" name="comment" placeholder="Your Comment" ng-model="txtcomment"/>
+					<input ng-keyup="$event.keyCode == 13 && btn_add(txtcomment, selectedId)" type="text" name="comment" style="width:100%; border: 1px solid black;"placeholder="Your Comment" ng-model="txtcomment"/>
 					<button ng-click='btn_add(txtcomment, selectedId)' style='margin-top:10px;'>Post Comment</button>
 		 
 					<h4>Comments</h4>
-					<ul style="background:white; margin-bottom:10px;">
-						<li ng-repeat="x in getComments.split('/') track by $index ">- {{x}}</li>
+					<ul style="background:white; margin-bottom:10px; border: 1px solid black;">
+						<li ng-repeat="x in getComments.split('/') track by $index ">* {{x}}</li>
 					</ul>
 				</div>
 				</body>

@@ -16,6 +16,25 @@ myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup,
 		}
 	}
 	
+	$scope.removeVideo = function(idRemove) {
+		$scope.idRemove = idRemove;
+		$scope.modal.hide();
+		swal({
+		title: "Are you sure?",   text: "The video will be removed from your page!",
+		type: "warning",
+		showCancelButton: true,
+		confirmButtonColor: "#DD6B55",
+		confirmButtonText: "Yes, delete it!",
+		closeOnConfirm: false },
+		function(){
+			swal("Deleted!", "The video has been deleted.", "success");
+			delete videoApi.karateList[idRemove];
+			$scope.modal.hide();
+		});
+		
+		
+	}
+	
 	//Checks if first time adding video
 	$scope.firstTimeAdd = true;
 	
