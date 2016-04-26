@@ -1,4 +1,4 @@
-myApp.factory('videoApi', function ($resource) {
+myApp.factory('videoApi', function ($resource, $cookies) {
 	
 	this.yt = $resource('https://www.googleapis.com/youtube/v3/videos?id=:id',{id:'@videoID', part:'snippet', key: 'AIzaSyDskT9SnSCiKLDn4DgRIguNi27wVyn6xt0'});
 	
@@ -12,10 +12,32 @@ myApp.factory('videoApi', function ($resource) {
 		ik9x3eAJfdg:{videoURL: 'ik9x3eAJfdg', done: false,	rating: 3, comments: '123'},
 		DMjeu1yGBB0:{videoURL: 'DMjeu1yGBB0', done: false,	rating: 3, comments: 'ew!'}
 	}
-		
-	this.getList = function() {
-		return this.karateList;
+
+	this.setCookie = function() {
+		$cookies.putObject('videoList', this.karateList);
+		// console.log($cookies.getObject('videoList'));
+		this.getList();
 	};
+	
+	this.getList = function() {
+		// return $cookies.getObject('videoList');
+		// console.log($cookies.getObject('videoList'))
+		if( $cookies.getObject('videoList') === undefined) {
+			$cookies.putObject('videoList', this.karateList);
+			return $cookies.getObject('videoList');
+			// console.log('undefined', $cookies.getObject('videoList'));
+		}
+		else {
+			return $cookies.getObject('videoList');
+			console.log('ej undefined', $cookies.getObject('videoList'));
+		}
+		// $cookies.getObject('videoList');
+	};
+	
+	
+	// https://www.youtube.com/watch?v=EHz31kpIplk
+	// https://www.youtube.com/watch?v=OcW92gWShAc
+	// https://www.youtube.com/watch?v=CKLuFX9lZTI
 	
 	this.currRate = 1;
 	

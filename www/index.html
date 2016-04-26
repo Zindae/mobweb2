@@ -30,6 +30,8 @@
 	<script src="cordova.js"></script>
 	<script src="lib/ionic/js/ionic.bundle.js"></script>
 	<script src="lib/angular-resource/angular-resource.js"></script>
+	<script src="lib/angular-cookies/angular-cookies.js"></script>
+	<script src="js/angular-local-storage.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/angular-youtube-embed.js"></script>
 	<script src="js/video-controller.js"></script>
@@ -71,7 +73,7 @@
 		<div class="container">	
 			<div class="main">
 				<ul class="mainContainer">
-					<li ng-repeat="x in videoList()" class="thumbnail-list-item" id="{{x.videoURL}}">
+					<li ng-repeat="x in videoList" class="thumbnail-list-item" id="{{x.videoURL}}">
 						<img src="http://img.youtube.com/vi/{{x.videoURL}}/2.jpg" ng-click="openModal(x.videoURL) && setCurrentRate(x.rating)" width="240px"/>
 					</li>
 				</ul>

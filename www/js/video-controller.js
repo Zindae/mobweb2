@@ -1,13 +1,12 @@
 myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup, $ionicModal, videoApi) {
-	
+
 	//Adds new video to list
     $scope.karateAdd = function() {
-		videoApi.karateList[youtubeEmbedUtils.getIdFromURL($scope.karateInput)] = {videoURL:youtubeEmbedUtils.getIdFromURL($scope.karateInput), rating:1};
+		videoApi.karateList[youtubeEmbedUtils.getIdFromURL($scope.karateInput)] = {videoURL:youtubeEmbedUtils.getIdFromURL($scope.karateInput), done:false, rating:1, comments:''};
         $scope.karateInput = "";
-		
+		videoApi.setCookie();
 		//SWAL Alert
 		if ($scope.firstTimeAdd === true) {
-			
 			swal("Video added!", "Click on the video thumbnail for more fun stuff.", "success");
 			$scope.firstTimeAdd = false;
 		}
@@ -20,19 +19,17 @@ myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup,
 		$scope.idRemove = idRemove;
 		$scope.modal.hide();
 		swal({
-		title: "Are you sure?",   text: "The video will be removed from your page!",
-		type: "warning",
-		showCancelButton: true,
-		confirmButtonColor: "#DD6B55",
-		confirmButtonText: "Yes, delete it!",
-		closeOnConfirm: false },
+			title: "Are you sure?",   text: "The video will be removed from your page!",
+			type: "warning",
+			showCancelButton: true,
+			confirmButtonColor: "#DD6B55",
+			confirmButtonText: "Yes, delete it!",
+			closeOnConfirm: false },
 		function(){
 			swal("Deleted!", "The video has been deleted.", "success");
 			delete videoApi.karateList[idRemove];
 			$scope.modal.hide();
 		});
-		
-		
 	}
 	
 	//Checks if first time adding video
@@ -48,10 +45,16 @@ myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup,
             });
         };
 	
+	$scope.videoList = videoApi.getList();
+	// console.log($scope.videoList);
 	//Gets Video List
-	$scope.videoList = function() {
-		return videoApi.getList();
-	}
+	// $scope.videoList = function() {
+		// // videoApi.setCookie();
+		// // console.log(videoApi.getList());
+		// // console.log('ctrl', videoApi.getList());
+		// return videoApi.getList();
+		// // return tempList;
+	// }
 	
 	//Button for adding comment, pushes to model and updates.
 	$scope.btn_add = function(txtcomment, selectedId) {
