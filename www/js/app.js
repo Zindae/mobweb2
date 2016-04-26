@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ionic', 'youtube-embed', 'ngResource'])
+var myApp = angular.module('myApp', ['ionic', 'youtube-embed', 'ngResource', 'ngCookies'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

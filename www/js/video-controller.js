@@ -1,18 +1,27 @@
 myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup, $ionicModal, videoApi) {
 	
+	$scope.karateInput = '';
 	//Adds new video to list
     $scope.karateAdd = function() {
-		videoApi.karateList[youtubeEmbedUtils.getIdFromURL($scope.karateInput)] = {videoURL:youtubeEmbedUtils.getIdFromURL($scope.karateInput), rating:1};
-        $scope.karateInput = "";
-		
-		//SWAL Alert
-		if ($scope.firstTimeAdd === true) {
-			
-			swal("Video added!", "Click on the video thumbnail for more fun stuff.", "success");
-			$scope.firstTimeAdd = false;
-		}
+		if ($scope.karateInput != '' && $scope.karateInput != youtubeEmbedUtils.getIdFromURL($scope.karateInput)) {
+			console.log($scope.karateInput);
+			videoApi.karateList[youtubeEmbedUtils.getIdFromURL($scope.karateInput)] = {videoURL:youtubeEmbedUtils.getIdFromURL($scope.karateInput), done: false, rating:1, comments:''};
+			console.log(youtubeEmbedUtils.getIdFromURL($scope.karateInput));
+			$scope.karateInput = "";
+			videoApi.setCookie();
+			$scope.videoList = videoApi.getList();
+			//SWAL Alert
+			if ($scope.firstTimeAdd === true) {
+				swal("Video added!", "Click on the video thumbnail for more fun stuff.", "success");
+				$scope.firstTimeAdd = false;
+			}
+			else {
+				swal({   title: "Video added!",   text: "",   timer: 1000,   showConfirmButton: false, type:"success"});
+			}
+		} 
 		else {
-			swal({   title: "Video added!",   text: "",   timer: 1000,   showConfirmButton: false, type:"success"});
+			swal({title:"Something went wrong!", text:"You need to input an URL.", type:"warning"});
+			$scope.karateInput = "";
 		}
 	}
 	
@@ -20,38 +29,26 @@ myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup,
 		$scope.idRemove = idRemove;
 		$scope.modal.hide();
 		swal({
-		title: "Are you sure?",   text: "The video will be removed from your page!",
-		type: "warning",
-		showCancelButton: true,
-		confirmButtonColor: "#DD6B55",
-		confirmButtonText: "Yes, delete it!",
-		closeOnConfirm: false },
+			title: "Are you sure?",   text: "The video will be removed from your page!",
+			type: "warning",
+			showCancelButton: true,
+			confirmButtonColor: "#DD6B55",
+			confirmButtonText: "Yes, delete it!",
+			closeOnConfirm: false },
 		function(){
 			swal("Deleted!", "The video has been deleted.", "success");
 			delete videoApi.karateList[idRemove];
+			videoApi.setCookie();
+			$scope.videoList = videoApi.getList();
 			$scope.modal.hide();
-		});
-		
-		
+		});		
 	}
 	
-	//Checks if first time adding video
+	//Checks if first time adding video for different popups
 	$scope.firstTimeAdd = true;
 	
-	//Obselete remove function
-    $scope.remove = function(){
-        var oldList = $scope.karateList;
-        $scope.karateList = [];
-        angular.forEach(oldList, function(x) 
-            {
-            if (!x.adone) $scope.karateList.push(x);
-            });
-        };
-	
 	//Gets Video List
-	$scope.videoList = function() {
-		return videoApi.getList();
-	}
+	$scope.videoList = videoApi.getList();
 	
 	//Button for adding comment, pushes to model and updates.
 	$scope.btn_add = function(txtcomment, selectedId) {
@@ -74,7 +71,6 @@ myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup,
 			$scope.checked = false;
 		};
 		$scope.videoRating = videoApi.karateList[$scope.id].rating;
-		
 	}
 
 	// HTML template for the modal
@@ -104,8 +100,5 @@ myApp.controller('youtubeCtrl', function($scope, youtubeEmbedUtils, $ionicPopup,
 		};
 		$scope.youtubeVideo = videoApi.yt.get({id:id});
 
-}
-		// $scope.theBestVideo = 'TyX2nGbAWgs'
-		// http://angulartutorial.blogspot.com/2014/03/rating-stars-in-angular-js-using.html
-
- });
+	}
+});
